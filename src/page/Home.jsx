@@ -1,9 +1,13 @@
 import Calender from "../components/UI/Calender/Calender";
+import Footer from "../layout/Footer";
+import Navbar from "../layout/Navbar";
 
 const Home = () => {
     return (
         <div>
-           <Calender></Calender>
+            <Navbar />
+            <Calender />
+            <Footer/>
         </div>
     );
 };

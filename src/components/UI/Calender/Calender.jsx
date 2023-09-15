@@ -5,7 +5,7 @@ import { EVENTS } from "../../../utils/event";
 const Calender = () => {
     // const [events, setEvents] = useState(EVENTS);
     const fetchRemote = async (query) => {
-        console.log({ query });
+        console.log("🚀 ~ file: Calender.jsx:8 ~ fetchRemote ~ query:", query)
         return new Promise((res) => {
             setTimeout(() => {
                 res(EVENTS);
@@ -45,7 +45,7 @@ const Calender = () => {
     };
 
     return (
-        <div>
+        <div className="mx-5">
             <Scheduler
                 getRemoteEvents={fetchRemote}
                 onConfirm={onConfirm}
